@@ -1,4 +1,5 @@
 #-	Create a class which performs basic calculator operations
+import sys
 class basiccalculator:
     @staticmethod
     def addition(a,b):
@@ -20,7 +21,7 @@ a = int(input("Enter first number:"))
 b = int(input("Enter second number:"))
 X = basiccalculator()
 choice = 0
-while choice <=3:
+while True:
     print("0. ADDITION")
     print("1. SUBTRACTION")
     print("2. MULTIPLICATION")
@@ -36,3 +37,4 @@ while choice <=3:
         print(X.division(a,b))
     else:
         print("Invalid choice")
+        sys.exit()
